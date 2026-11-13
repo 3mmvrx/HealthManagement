@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Patient dashboard";
+}
+
+<section class="container py-5">
+    <div class="hc-card p-4 p-md-5">
+        <span class="hc-eyebrow">Patient portal</span>
+        <h1 class="h2 mt-2">Welcome to your dashboard</h1>
+        <p class="text-muted mb-4">
+            Manage your account details or return to the clinic home page to explore available care.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" asp-area="Identity" asp-controller="Profile" asp-action="Index">
+                <i class="bi bi-person-circle me-1" aria-hidden="true"></i>My profile
+            </a>
+            <a class="btn btn-outline-primary" asp-area="" asp-controller="Home" asp-action="Index">
+                Return to home
+            </a>
+        </div>
+    </div>
+</section>

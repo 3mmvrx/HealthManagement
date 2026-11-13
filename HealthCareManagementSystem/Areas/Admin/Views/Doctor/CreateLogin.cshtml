@@ -1,0 +1,22 @@
+@model DoctorAccountVM
+@{
+    ViewData["Title"] = "Create doctor login";
+}
+
+<section class="container py-5">
+    <div class="hc-admin-card p-4 mx-auto" style="max-width: 720px">
+        <span class="hc-eyebrow">SuperAdmin</span>
+        <h1 class="h3 mt-2">Create login for @Model.DoctorName</h1>
+        <p class="text-muted">This creates an Identity account with the Doctor role and links it to the doctor profile.</p>
+        <form asp-action="CreateLogin" method="post">
+            <input asp-for="DoctorId" type="hidden" />
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <div class="mb-3"><label asp-for="Email" class="form-label"></label><input asp-for="Email" class="form-control" /><span asp-validation-for="Email" class="text-danger"></span></div>
+            <div class="mb-3"><label asp-for="UserName" class="form-label"></label><input asp-for="UserName" class="form-control" /><span asp-validation-for="UserName" class="text-danger"></span></div>
+            <div class="mb-3"><label asp-for="Password" class="form-label"></label><input asp-for="Password" class="form-control" autocomplete="new-password" /><span asp-validation-for="Password" class="text-danger"></span></div>
+            <div class="mb-4"><label asp-for="ConfirmPassword" class="form-label"></label><input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" /><span asp-validation-for="ConfirmPassword" class="text-danger"></span></div>
+            <div class="d-flex justify-content-between"><a asp-action="Update" asp-route-id="@Model.DoctorId" class="btn btn-outline-secondary">Cancel</a><button type="submit" class="btn btn-primary">Create doctor login</button></div>
+        </form>
+    </div>
+</section>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

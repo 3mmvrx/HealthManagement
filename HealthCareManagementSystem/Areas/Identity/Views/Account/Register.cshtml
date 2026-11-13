@@ -1,0 +1,65 @@
+@model RegisterVM
+@{
+    ViewData["Title"] = "Create an account";
+}
+
+<h1 class="h3 mb-2">Create your account</h1>
+<p class="text-muted mb-4">Set up your patient account to book and manage visits.</p>
+
+<form asp-action="Register" method="post">
+    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" autocomplete="name" />
+        <span asp-validation-for="Name" class="text-danger small"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Address" class="form-label"></label>
+        <input asp-for="Address" class="form-control" autocomplete="street-address" />
+        <span asp-validation-for="Address" class="text-danger small"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" type="email" class="form-control" autocomplete="email" />
+        <span asp-validation-for="Email" class="text-danger small"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="UserName" class="form-label"></label>
+        <input asp-for="UserName" class="form-control" autocomplete="username" />
+        <span asp-validation-for="UserName" class="text-danger small"></span>
+    </div>
+    <div class="row g-3 mb-3">
+        <div class="col-sm-6">
+            <label asp-for="Gender" class="form-label"></label>
+            <select asp-for="Gender" class="form-select">
+                <option value="">Choose gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+            <span asp-validation-for="Gender" class="text-danger small"></span>
+        </div>
+        <div class="col-sm-6">
+            <label asp-for="DateOfBirth" class="form-label"></label>
+            <input asp-for="DateOfBirth" type="date" min="@DateTime.Today.AddYears(-99).ToString("yyyy-MM-dd")" max="@DateTime.Today.AddYears(-13).ToString("yyyy-MM-dd")" class="form-control" autocomplete="bday" />
+            <span asp-validation-for="DateOfBirth" class="text-danger small"></span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Password" class="form-label"></label>
+        <input asp-for="Password" class="form-control" autocomplete="new-password" />
+        <span asp-validation-for="Password" class="text-danger small"></span>
+    </div>
+    <div class="mb-4">
+        <label asp-for="ConfirmPassword" class="form-label"></label>
+        <input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg w-100">Create account</button>
+</form>
+
+<p class="text-center text-muted mt-4 mb-0">Already registered? <a asp-action="Login">Log in</a></p>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

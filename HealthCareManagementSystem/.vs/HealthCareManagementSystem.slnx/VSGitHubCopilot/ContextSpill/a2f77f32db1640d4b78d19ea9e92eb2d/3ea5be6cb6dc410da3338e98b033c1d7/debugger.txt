@@ -1,0 +1,161 @@
+﻿## PROCESSES
+Currently debugging:
+- HealthCareManagementSystem.exe (PID: 10112)
+
+## CALLSTACK
+Thread ID: 8788
+[1] HealthCareManagementSystem.dll!HealthCareManagementSystem.Program.Main
+This is the current user focused stack frame. The provided locals context corresponds to this stack frame, but you may evaluate expressions and retrieve code for any frame.
+Code for the stack frame:
+```csharp HealthCareManagementSystem\Program.cs
+14:         public static async Task Main(string[] args)
+15:         {
+16:             var builder = WebApplication.CreateBuilder(args);
+17: 
+18:             // Every POST / PUT / DELETE must carry an anti-forgery token. Forms written with the
+19:             // form tag helper (<form asp-action="...">) add the token automatically.
+20:             builder.Services.AddControllersWithViews(options =>
+21:             {
+22:                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+23:             });
+24: 
+25:             var connectionString =
+26:                 builder.Configuration.GetConnectionString("DefaultConnection")
+27:                     ?? throw new InvalidOperationException(
+28:                         "Connection string 'DefaultConnection' not found.");
+29: 
+30:             builder.Services.AddDbContext<ApplicationDbContext>(options =>
+31:             {
+32:                 options.UseSqlServer(connectionString);
+33:             });
+34: 
+35:             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+36:             {
+37:                 options.User.RequireUniqueEmail = true;
+38:                 options.SignIn.RequireConfirmedEmail = false;
+39: 
+40:                 options.Password.RequiredLength = 8;
+41: 
+42:                 options.Lockout.MaxFailedAccessAttempts = 5;
+43:                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+44:             })
+45:             .AddEntityFrameworkStores<ApplicationDbContext>()
+46:             .AddDefaultTokenProviders()
+47:             // Puts the display name and picture into the sign-in cookie (see the layouts).
+48:             .AddClaimsPrincipalFactory<AppClaimsPrincipalFactory>();
+49: 
+50:             // Repositories, e-mail, image uploads, appointment slots, database seeding.
+51:             builder.Services.AddApplicationServices();
+52:             builder.Services.Configure<EmailSettings>(
+53:                 builder.Configuration.GetSection(EmailSettings.SectionName));
+54: 
+55:             // A locked or deleted account loses its session within a minute instead of after 30 minutes.
+56:             builder.Services.Configure<SecurityStampValidatorOptions>(options =>
+57:             {
+58:                 options.ValidationInterval = TimeSpan.FromMinutes(1);
+59:             });
+60: 
+61:             // Slows down password guessing and e-mail flooding on the sign-in / registration / reset
+62:             // forms: at most 20 requests per minute and address (see [EnableRateLimiting("auth")]).
+63:             builder.Services.AddRateLimiter(options =>
+64:             {
+65:                 options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+66: 
+67:                 options.AddPolicy("auth", httpContext =>
+68:                     RateLimitPartition.GetFixedWindowLimiter(
+69:                         httpContext.Connection.RemoteIpAddress?.ToString() ?? "unknown",
+70:                         _ => new FixedWindowRateLimiterOptions
+71:                         {
+72:                             PermitLimit = 20,
+73:                             Window = TimeSpan.FromMinutes(1),
+74:                             QueueLimit = 0
+75:                         }));
+76:             });
+77: 
+78:             // Uploads are pictures of at most 2 MB (see ImageService); refuse anything much larger early.
+79:             builder.WebHost.ConfigureKestrel(options =>
+80:             {
+81:                 options.Limits.MaxRequestBodySize = 6 * 1024 * 1024;
+82:             });
+83: 
+84:             builder.Services.ConfigureApplicationCookie(options =>
+85:             {
+86:                 // Identity lives in an area, so the default /Account/Login paths do not apply.
+87:                 options.LoginPath = "/Identity/Account/Login";
+88:                 options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+89: 
+90:                 options.SlidingExpiration = true;
+91:                 options.ExpireTimeSpan = TimeSpan.FromHours(8);
+92:                 options.Cookie.HttpOnly = true;
+93:                 options.Cookie.SameSite = SameSiteMode.Lax;
+94:                 options.Cookie.SecurePolicy = builder.Environment.IsDevelopment()
+95:                     ? CookieSecurePolicy.SameAsRequest
+96:                     : CookieSecurePolicy.Always;
+97:             });
+98: 
+99:             var app = builder.Build();
+100: 
+101:             using (var scope = app.Services.CreateScope())
+102:             {
+103:                 var initializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+104:                 await initializer.InitializeAsync();
+105:             }
+106: 
+107:             // Configure the HTTP request pipeline.
+108:             if (!app.Environment.IsDevelopment())
+109:             {
+110:                 app.UseExceptionHandler("/Home/Error");
+111:                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+112:                 app.UseHsts();
+113:             }
+114: 
+115:             // Show the friendly error page for 404 / 403 / ... responses without a body.
+116:             app.UseStatusCodePagesWithReExecute("/Home/Error", "?statusCode={0}");
+117: 
+118:             app.UseHttpsRedirection();
+119: 
+120:             // MapStaticAssets only knows about files that existed at build time. Pictures uploaded
+121:             // while the site is running (clinic, doctor and profile photos) need UseStaticFiles.
+122:             app.UseStaticFiles();
+123: 
+124:             app.UseRouting();
+125: 
+126:             app.UseRateLimiter();
+127: 
+128:             app.UseAuthentication();
+129:             app.UseAuthorization();
+130: 
+131:             app.MapStaticAssets();
+132: 
+133:             // /Admin/Clinic/Update/5 , /Identity/Account/Login , /Patient/Appointment/Book/3 ...
+134:             app.MapControllerRoute(
+135:                 name: "areas",
+136:                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}")
+137:                 .WithStaticAssets();
+138: 
+139:             // Public site: / , /Home/Privacy ...
+140:             app.MapControllerRoute(
+141:                 name: "default",
+142:                 pattern: "{controller=Home}/{action=Index}/{id?}")
+143:                 .WithStaticAssets();
+144: 
+145:             app.Run();
+146:         }
+```
+Current statement: line 145
+[2] [External Code]
+
+## LOCALS
+| Name | Type | Value |
+| --- | --- | --- |
+| args | string[] | {string[0]} |
+| app | Microsoft.AspNetCore.Builder.WebApplication | Evaluation of method Microsoft.AspNetCore.Builder.WebApplication.DebuggerToString requires calling method System.RuntimeType.get_IsConstructedGenericType, which cannot be called in this context. |
+| connectionString | string | "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=HealthCareManagementSystem_DB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;" |
+| builder | Microsoft.AspNetCore.Builder.WebApplicationBuilder | {Microsoft.AspNetCore.Builder.WebApplicationBuilder} |
+
+## BREAKPOINTS
+Breakpoints:
+- Breakpoint set in file with id '4' at line number 145 was enabled, bound successfully, and hit 1 times.
+- Breakpoint set in file with id '6' at line number 56 was enabled, bound successfully, and hit 0 times.
+
+

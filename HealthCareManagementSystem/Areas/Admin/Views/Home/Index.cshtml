@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    var canManageUsers = User.IsInRole(CD.SUPER_ADMIN_ROLE) || User.IsInRole(CD.ADMIN_ROLE);
+}
+
+<p class="text-muted mb-4">Choose an area to manage your healthcare service.</p>
+
+<div class="row g-4">
+    <div class="col-md-6 col-xl-4">
+        <a class="hc-admin-card hc-admin-shortcut d-block h-100 p-4 text-decoration-none" asp-area="Admin" asp-controller="Clinic" asp-action="Index">
+            <span class="hc-admin-shortcut-icon" aria-hidden="true"><i class="bi bi-hospital"></i></span>
+            <h2 class="h5 mt-3 mb-2">Manage clinics</h2>
+            <p class="text-muted mb-0">Review clinic information, contact details, and images.</p>
+        </a>
+    </div>
+    <div class="col-md-6 col-xl-4">
+        <a class="hc-admin-card hc-admin-shortcut d-block h-100 p-4 text-decoration-none" asp-area="Admin" asp-controller="Doctor" asp-action="Index">
+            <span class="hc-admin-shortcut-icon" aria-hidden="true"><i class="bi bi-person-badge"></i></span>
+            <h2 class="h5 mt-3 mb-2">Manage doctors</h2>
+            <p class="text-muted mb-0">Maintain doctor profiles, specializations, and clinic assignments.</p>
+        </a>
+    </div>
+    @if (canManageUsers)
+    {
+        <div class="col-md-6 col-xl-4">
+            <a class="hc-admin-card hc-admin-shortcut d-block h-100 p-4 text-decoration-none" asp-area="Admin" asp-controller="User" asp-action="Index">
+                <span class="hc-admin-shortcut-icon" aria-hidden="true"><i class="bi bi-people"></i></span>
+                <h2 class="h5 mt-3 mb-2">Manage users</h2>
+                <p class="text-muted mb-0">Review account status and manage access for registered users.</p>
+            </a>
+        </div>
+    }
+</div>

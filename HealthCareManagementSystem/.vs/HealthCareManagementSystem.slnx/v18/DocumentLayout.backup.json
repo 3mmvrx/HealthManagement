@@ -1,0 +1,1368 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\doctor\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\doctor\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\doctor\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\doctor\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\doctor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\doctor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\viewmodels\\doctorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:viewmodels\\doctorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\doctor\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\doctor\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\controllers\\cliniccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\doctor\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\doctor\\views\\schedule\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\doctor\\createlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\doctor\\createlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\viewmodels\\doctoraccountvms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:viewmodels\\doctoraccountvms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\utilities\\controllerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:utilities\\controllerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\utilities\\dbseeder\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:utilities\\dbseeder\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\viewmodels\\adminuservms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:viewmodels\\adminuservms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\user\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\user\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\doctor\\schedules.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\doctor\\schedules.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\patient\\views\\appointment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\patient\\views\\appointment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\viewmodels\\doctorschedulevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:viewmodels\\doctorschedulevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\patient\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\patient\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\patient\\views\\doctor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\patient\\views\\doctor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\AppData\\Local\\Temp\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\home\\notfoundpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\home\\notfoundpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\doctor\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\doctor\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\clinic\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\clinic\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\clinic\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\clinic\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\clinic\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\clinic\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\clinic\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\clinic\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\account\\newpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\account\\newpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\account\\validateotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\account\\validateotp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\account\\resendemailconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\account\\resendemailconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\identity\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\identity\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\viewmodels\\clinicvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:viewmodels\\clinicvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\patientdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\patientdoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\medicalfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\medicalfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\doctorschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\doctorschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\clinicpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\clinicpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\clinic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\clinic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\applicationuserotp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\applicationuserotp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\.copilot\\plans\\plan-resolve-the-reported-build,-security,-and-data-access-issues.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MardownSecureEdit"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\migrations\\20260701094420_editinmodeldoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:migrations\\20260701094420_editinmodeldoctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\migrations\\20260701094420_editinmodeldoctor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:migrations\\20260701094420_editinmodeldoctor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\migrations\\20260701100825_editinmodeldoctorr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:migrations\\20260701100825_editinmodeldoctorr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\migrations\\20260701100825_editinmodeldoctorr.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:migrations\\20260701100825_editinmodeldoctorr.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1681550246\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\utilities\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:utilities\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\production-deployment.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:production-deployment.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\patient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\patient\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\viewmodels\\patientbookingvms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:viewmodels\\patientbookingvms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\patient\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\patient\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\patient\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\patient\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\utilities\\cd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:utilities\\cd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\viewmodels\\doctordashboardvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:viewmodels\\doctordashboardvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\doctor\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\doctor\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\doctor\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\doctor\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|c:\\users\\asus\\desktop\\healthcaremanagementsystem\\healthcaremanagementsystem\\areas\\doctor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51F1BB84-CB01-6040-864D-55FB444DA835}|HealthCareManagementSystem.csproj|solutionrelative:areas\\doctor\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:20.721Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\.gitignore",
+              "RelativeDocumentMoniker": "..\\.gitignore",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\.gitignore",
+              "RelativeToolTip": "..\\.gitignore",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-16T19:52:25.143Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAawEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:32.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T15:22:48.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T15:22:56.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAawF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:32.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T14:24:24.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Doctor\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Areas\\Doctor\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAArwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T16:16:01.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Update.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Doctor\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Update.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Doctor\\Update.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:37.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Doctor\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Doctor\\Create.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:37.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DoctorVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\DoctorVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DoctorVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\DoctorVM.cs",
+              "RelativeToolTip": "ViewModels\\DoctorVM.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAhwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T14:24:46.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Controllers\\ScheduleController.cs",
+              "RelativeDocumentMoniker": "Areas\\Doctor\\Controllers\\ScheduleController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Controllers\\ScheduleController.cs",
+              "RelativeToolTip": "Areas\\Doctor\\Controllers\\ScheduleController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAcwJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T16:16:43.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClinicController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Controllers\\ClinicController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\ClinicController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Controllers\\ClinicController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\ClinicController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T16:26:59.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Views\\Schedule\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Doctor\\Views\\Schedule\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Views\\Schedule\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Doctor\\Views\\Schedule\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAvwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T16:16:53.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\CreateLogin.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Doctor\\CreateLogin.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\CreateLogin.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Doctor\\CreateLogin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T16:19:48.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Doctor\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Doctor\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:09.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DoctorAccountVMs.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\DoctorAccountVMs.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DoctorAccountVMs.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\DoctorAccountVMs.cs",
+              "RelativeToolTip": "ViewModels\\DoctorAccountVMs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T16:14:56.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ControllerExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Utilities\\ControllerExtensions.cs",
+              "RelativeDocumentMoniker": "Utilities\\ControllerExtensions.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Utilities\\ControllerExtensions.cs",
+              "RelativeToolTip": "Utilities\\ControllerExtensions.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T16:15:18.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "CD.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Utilities\\CD.cs",
+              "RelativeDocumentMoniker": "Utilities\\CD.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Utilities\\CD.cs",
+              "RelativeToolTip": "Utilities\\CD.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIBIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T16:15:07.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Utilities\\DbSeeder\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Utilities\\DbSeeder\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Utilities\\DbSeeder\\DbInitializer.cs",
+              "RelativeToolTip": "Utilities\\DbSeeder\\DbInitializer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:25:11.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Doctor\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Doctor\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T16:16:24.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Doctor\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Doctor\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T16:16:16.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Doctor\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Doctor\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\Doctor\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T16:16:11.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "DoctorDashboardVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\DoctorDashboardVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DoctorDashboardVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\DoctorDashboardVM.cs",
+              "RelativeToolTip": "ViewModels\\DoctorDashboardVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T16:16:07.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminUserVMs.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\AdminUserVMs.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AdminUserVMs.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\AdminUserVMs.cs",
+              "RelativeToolTip": "ViewModels\\AdminUserVMs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T15:20:21.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\User\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\User\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\User\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\User\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T15:23:03.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Schedules.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Schedules.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Doctor\\Schedules.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Schedules.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Doctor\\Schedules.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T14:25:03.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Views\\Appointment\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Patient\\Views\\Appointment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Views\\Appointment\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Patient\\Views\\Appointment\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T14:28:25.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DoctorScheduleVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\DoctorScheduleVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DoctorScheduleVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\DoctorScheduleVM.cs",
+              "RelativeToolTip": "ViewModels\\DoctorScheduleVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T14:23:58.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "PatientBookingVMs.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\PatientBookingVMs.cs",
+              "RelativeDocumentMoniker": "ViewModels\\PatientBookingVMs.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\PatientBookingVMs.cs",
+              "RelativeToolTip": "ViewModels\\PatientBookingVMs.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIBIwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T14:26:01.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Patient\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\Patient\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T14:28:39.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Areas\\Patient\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Areas\\Patient\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T14:28:07.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:40:12.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Areas\\Patient\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Areas\\Patient\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:37:01.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Views\\Doctor\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Patient\\Views\\Doctor\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Views\\Doctor\\Details.cshtml",
+              "RelativeToolTip": "Areas\\Patient\\Views\\Doctor\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T06:45:18.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:52:41.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Patient\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Patient\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Patient\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T06:21:51.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAcwDcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:33:17.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:40:11.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Utilities\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Utilities\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Utilities\\EmailSender.cs",
+              "RelativeToolTip": "Utilities\\EmailSender.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T04:54:18.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "PRODUCTION-DEPLOYMENT.md",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\PRODUCTION-DEPLOYMENT.md",
+              "RelativeDocumentMoniker": "PRODUCTION-DEPLOYMENT.md",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\PRODUCTION-DEPLOYMENT.md",
+              "RelativeToolTip": "PRODUCTION-DEPLOYMENT.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-16T04:55:14.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "Services\\AppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T04:41:44.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAgAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-16T04:10:20.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SQLQuery1.sql",
+              "DocumentMoniker": "C:\\Users\\Asus\\AppData\\Local\\Temp\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\SQLQuery1.sql",
+              "ToolTip": "C:\\Users\\Asus\\AppData\\Local\\Temp\\SQLQuery1.sql",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-10-16T04:07:20.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Doctor\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Doctor\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Doctor\\Delete.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:37.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:52:33.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NotFoundPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Home\\NotFoundPage.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Home\\NotFoundPage.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Home\\NotFoundPage.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Home\\NotFoundPage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:51.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Clinic\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Clinic\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Clinic\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Clinic\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:37.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Clinic\\Update.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Clinic\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Clinic\\Update.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Clinic\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:37.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Clinic\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Clinic\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Clinic\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Clinic\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:37.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Clinic\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Clinic\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Clinic\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Clinic\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:53:09.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:32.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "NewPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\NewPassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Account\\NewPassword.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\NewPassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Account\\NewPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:32.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ValidateOtp.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\ValidateOtp.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Account\\ValidateOtp.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\ValidateOtp.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Account\\ValidateOtp.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:32.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ResendEmailConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\ResendEmailConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Account\\ResendEmailConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\ResendEmailConfirmation.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Account\\ResendEmailConfirmation.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:32.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:32.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAIBJwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:32.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Identity\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:02.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AuthLayout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AuthLayout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:51:02.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAALMBAAAAAAAAAAAnwDECAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-16T03:39:16.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:52:46.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Asus\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1681550246\\site.css",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1681550246\\site.css",
+              "ToolTip": "C:\\Users\\Asus\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1681550246\\site.css",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1681550246\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-16T03:39:15.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T03:40:12.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "PatientDoctor.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\PatientDoctor.cs",
+              "RelativeDocumentMoniker": "Models\\PatientDoctor.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\PatientDoctor.cs",
+              "RelativeToolTip": "Models\\PatientDoctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Prescription.cs",
+              "RelativeDocumentMoniker": "Models\\Prescription.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Prescription.cs",
+              "RelativeToolTip": "Models\\Prescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:52.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Receptionist.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Receptionist.cs",
+              "RelativeDocumentMoniker": "Models\\Receptionist.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Receptionist.cs",
+              "RelativeToolTip": "Models\\Receptionist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:52.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ClinicVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\ClinicVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ClinicVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\ViewModels\\ClinicVM.cs",
+              "RelativeToolTip": "ViewModels\\ClinicVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:27:06.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "MedicalRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\MedicalRecord.cs",
+              "RelativeDocumentMoniker": "Models\\MedicalRecord.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\MedicalRecord.cs",
+              "RelativeToolTip": "Models\\MedicalRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "MedicalFile.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\MedicalFile.cs",
+              "RelativeDocumentMoniker": "Models\\MedicalFile.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\MedicalFile.cs",
+              "RelativeToolTip": "Models\\MedicalFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DoctorSchedule.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\DoctorSchedule.cs",
+              "RelativeDocumentMoniker": "Models\\DoctorSchedule.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\DoctorSchedule.cs",
+              "RelativeToolTip": "Models\\DoctorSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "Models\\Doctor.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Doctor.cs",
+              "RelativeToolTip": "Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ClinicPatient.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\ClinicPatient.cs",
+              "RelativeDocumentMoniker": "Models\\ClinicPatient.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\ClinicPatient.cs",
+              "RelativeToolTip": "Models\\ClinicPatient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Clinic.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Clinic.cs",
+              "RelativeDocumentMoniker": "Models\\Clinic.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Clinic.cs",
+              "RelativeToolTip": "Models\\Clinic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ApplicationUserOtp.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\ApplicationUserOtp.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUserOtp.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\ApplicationUserOtp.cs",
+              "RelativeToolTip": "Models\\ApplicationUserOtp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:26:51.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Repositories\\Repository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:24:21.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAvwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:24:21.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "plan-resolve-the-reported-build,-security,-and-data-access-issues.md",
+              "DocumentMoniker": "C:\\Users\\Asus\\.copilot\\plans\\plan-resolve-the-reported-build,-security,-and-data-access-issues.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-resolve-the-reported-build,-security,-and-data-access-issues.md",
+              "ToolTip": "C:\\Users\\Asus\\.copilot\\plans\\plan-resolve-the-reported-build,-security,-and-data-access-issues.md",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-resolve-the-reported-build,-security,-and-data-access-issues.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-16T03:20:54.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20260701094420_editinmodeldoctor.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Migrations\\20260701094420_editinmodeldoctor.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260701094420_editinmodeldoctor.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Migrations\\20260701094420_editinmodeldoctor.cs",
+              "RelativeToolTip": "Migrations\\20260701094420_editinmodeldoctor.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:28:57.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20260701094420_editinmodeldoctor.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Migrations\\20260701094420_editinmodeldoctor.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260701094420_editinmodeldoctor.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Migrations\\20260701094420_editinmodeldoctor.Designer.cs",
+              "RelativeToolTip": "Migrations\\20260701094420_editinmodeldoctor.Designer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:28:57.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20260701100825_editinmodeldoctorr.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Migrations\\20260701100825_editinmodeldoctorr.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260701100825_editinmodeldoctorr.Designer.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Migrations\\20260701100825_editinmodeldoctorr.Designer.cs",
+              "RelativeToolTip": "Migrations\\20260701100825_editinmodeldoctorr.Designer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:28:57.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20260701100825_editinmodeldoctorr.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Migrations\\20260701100825_editinmodeldoctorr.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260701100825_editinmodeldoctorr.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\HealthCareManagementSystem\\HealthCareManagementSystem\\Migrations\\20260701100825_editinmodeldoctorr.cs",
+              "RelativeToolTip": "Migrations\\20260701100825_editinmodeldoctorr.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:28:57.767Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

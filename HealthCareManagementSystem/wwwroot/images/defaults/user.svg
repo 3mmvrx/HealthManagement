@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="User">
+  <rect width="300" height="300" fill="#e2e8f0"/>
+  <circle cx="150" cy="115" r="55" fill="#94a3b8"/>
+  <path d="M40 300c0-66 49-104 110-104s110 38 110 104z" fill="#94a3b8"/>
+</svg>

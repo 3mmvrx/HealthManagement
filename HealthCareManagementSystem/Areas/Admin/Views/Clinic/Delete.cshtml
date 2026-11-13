@@ -1,0 +1,59 @@
+﻿@model HealthCareManagementSystem.Models.Clinic
+
+@{
+    ViewData["Title"] = "Delete Clinic";
+}
+
+<div class="container mt-5">
+
+    <div class="hc-admin-card">
+
+        <div class="hc-admin-card-header">
+            <h2 class="h5 mb-0">Confirm clinic deletion</h2>
+        </div>
+
+        <div class="card-body">
+
+            <h5>
+                Are you sure you want to delete this clinic?
+            </h5>
+
+            <hr />
+
+            <dl class="row">
+
+                <dt class="col-sm-3">Name</dt>
+                <dd class="col-sm-9">@Model.Name</dd>
+
+                <dt class="col-sm-3">Address</dt>
+                <dd class="col-sm-9">@Model.Address</dd>
+
+                <dt class="col-sm-3">Phone</dt>
+                <dd class="col-sm-9">@Model.PhoneNumber</dd>
+
+                <dt class="col-sm-3">Description</dt>
+                <dd class="col-sm-9">@Model.Description</dd>
+
+            </dl>
+
+            <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+
+                @Html.AntiForgeryToken()
+
+                <a asp-action="Index"
+                    class="btn btn-outline-secondary">
+                    Cancel
+                </a>
+
+                <button type="submit"
+                        class="btn btn-danger">
+                    Delete
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

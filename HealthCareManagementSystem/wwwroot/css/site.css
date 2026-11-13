@@ -1,0 +1,561 @@
+/* ------------------------------------------------------------------
+   HealthCare - shared styles (public site, patient area, sign-in pages)
+   Built on Bootstrap 5.3; only the brand colours and a few components are customised.
+------------------------------------------------------------------- */
+
+:root {
+    --hc-primary: #0f766e;
+    --hc-primary-dark: #115e59;
+    --hc-primary-soft: #ccfbf1;
+    --hc-ink: #0f172a;
+    --hc-muted: #64748b;
+    --hc-bg: #f6f8fa;
+    --hc-border: #e2e8f0;
+
+    --bs-primary: #0f766e;
+    --bs-primary-rgb: 15, 118, 110;
+    --bs-link-color: #0f766e;
+    --bs-link-color-rgb: 15, 118, 110;
+    --bs-link-hover-color: #115e59;
+    --bs-link-hover-color-rgb: 17, 94, 89;
+    --bs-body-color: #0f172a;
+    --bs-secondary-color: #64748b;
+    --bs-border-color: #e2e8f0;
+    --bs-body-font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    background: var(--hc-bg);
+}
+
+.text-muted {
+    color: var(--hc-muted) !important;
+}
+
+/* Buttons: Bootstrap 5.3 hard-codes the primary colour inside .btn-primary / .btn-outline-primary */
+.btn-primary {
+    --bs-btn-bg: #0f766e;
+    --bs-btn-border-color: #0f766e;
+    --bs-btn-hover-bg: #115e59;
+    --bs-btn-hover-border-color: #115e59;
+    --bs-btn-active-bg: #134e4a;
+    --bs-btn-active-border-color: #134e4a;
+    --bs-btn-disabled-bg: #0f766e;
+    --bs-btn-disabled-border-color: #0f766e;
+    --bs-btn-focus-shadow-rgb: 15, 118, 110;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #0f766e;
+    --bs-btn-border-color: #0f766e;
+    --bs-btn-hover-bg: #0f766e;
+    --bs-btn-hover-border-color: #0f766e;
+    --bs-btn-active-bg: #115e59;
+    --bs-btn-active-border-color: #115e59;
+    --bs-btn-disabled-color: #0f766e;
+    --bs-btn-disabled-border-color: #0f766e;
+    --bs-btn-focus-shadow-rgb: 15, 118, 110;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #14b8a6;
+    box-shadow: 0 0 0 0.2rem rgba(15, 118, 110, 0.18);
+}
+
+.form-check-input:checked {
+    background-color: #0f766e;
+    border-color: #0f766e;
+}
+
+/* ---------------------------------------------------------------- navigation */
+
+.hc-navbar {
+    background: #fff;
+    border-bottom: 1px solid var(--hc-border);
+}
+
+.hc-brand {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--hc-primary);
+    text-decoration: none;
+}
+
+.hc-brand i {
+    margin-right: 0.25rem;
+}
+
+.hc-navbar .nav-link {
+    color: var(--hc-ink);
+    font-weight: 500;
+}
+
+.hc-navbar .nav-link.active,
+.hc-navbar .nav-link:hover {
+    color: var(--hc-primary);
+}
+
+.hc-footer {
+    background: #fff;
+    border-top: 1px solid var(--hc-border);
+    color: var(--hc-muted);
+    font-size: 0.9rem;
+}
+
+/* ---------------------------------------------------------------- building blocks */
+
+.hc-card {
+    background: #fff;
+    border: 1px solid var(--hc-border);
+    border-radius: 14px;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.hc-card-hover {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hc-card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.hc-hero {
+    background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%);
+    padding: 4.5rem 0;
+}
+
+.hc-eyebrow {
+    display: inline-block;
+    background: var(--hc-primary-soft);
+    color: var(--hc-primary-dark);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.hc-band {
+    background: #fff;
+    border-top: 1px solid var(--hc-border);
+    border-bottom: 1px solid var(--hc-border);
+}
+
+.hc-stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--hc-primary);
+    line-height: 1.1;
+}
+
+.hc-points li {
+    margin-bottom: 0.5rem;
+}
+
+.hc-points i {
+    margin-right: 0.4rem;
+}
+
+.hc-step {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background: var(--hc-primary-soft);
+    color: var(--hc-primary);
+    font-size: 1.6rem;
+}
+
+.hc-avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e2e8f0;
+}
+
+.hc-avatar-sm {
+    width: 32px;
+    height: 32px;
+}
+
+.hc-avatar-lg {
+    width: 96px;
+    height: 96px;
+}
+
+.hc-avatar-xl {
+    width: 128px;
+    height: 128px;
+}
+
+.hc-cover {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    background: #e2e8f0;
+}
+
+.hc-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.hc-empty {
+    background: #fff;
+    border: 1px dashed #cbd5e1;
+    border-radius: 14px;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.hc-page-title {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+/* Appointment status badges */
+.hc-status {
+    font-weight: 600;
+    font-size: 0.78rem;
+    padding: 0.35em 0.7em;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.hc-status-pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.hc-status-confirmed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.hc-status-completed {
+    background: #e0f2fe;
+    color: #075985;
+}
+
+.hc-status-cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Time-slot picker */
+.hc-slot {
+    min-width: 84px;
+}
+
+.hc-slot-taken {
+    text-decoration: line-through;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.hc-day-pill {
+    min-width: 76px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* ---------------------------------------------------------------- sign-in / registration pages */
+
+.auth-body {
+    background: #fff;
+}
+
+.auth-shell {
+    min-height: 100vh;
+    display: flex;
+}
+
+.auth-side {
+    flex: 0 0 42%;
+    max-width: 520px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+    color: #fff;
+    background: linear-gradient(160deg, #0f766e 0%, #115e59 55%, #0c4a6e 100%);
+}
+
+.auth-points li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.auth-points i {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.auth-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: var(--hc-bg);
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    background: #fff;
+    border: 1px solid var(--hc-border);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.auth-card h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.auth-icon {
+    display: inline-grid;
+    width: 3.5rem;
+    height: 3.5rem;
+    place-items: center;
+    border-radius: 1rem;
+    color: var(--hc-primary);
+    background: var(--hc-primary-soft);
+    font-size: 1.6rem;
+}
+
+/* ---------------------------------------------------------------- validation */
+
+.field-validation-error {
+    color: #dc2626;
+    font-size: 0.85rem;
+}
+
+.input-validation-error {
+    border-color: #dc2626;
+}
+
+.validation-summary-errors ul {
+    margin-bottom: 0;
+    padding-left: 1.1rem;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* -------------------------------------------------------- accessibility */
+
+:focus-visible {
+    outline: 3px solid #0f766e;
+    outline-offset: 3px;
+}
+
+.hc-skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 2000;
+    padding: 0.65rem 1rem;
+    transform: translateY(-160%);
+    border-radius: 0.5rem;
+    color: #fff;
+    background: var(--hc-ink);
+    text-decoration: none;
+}
+
+.hc-skip-link:focus {
+    transform: translateY(0);
+}
+
+/* -------------------------------------------------------- admin components */
+
+.hc-admin-shell {
+    min-height: 100vh;
+    background: var(--hc-bg);
+}
+
+.hc-admin-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    color: #fff;
+    background: #123247;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.12);
+}
+
+.hc-admin-navbar .navbar-brand,
+.hc-admin-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.hc-admin-navbar .navbar-brand {
+    font-weight: 700;
+}
+
+.hc-admin-shortcut {
+    color: var(--hc-ink);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hc-admin-shortcut:hover {
+    color: var(--hc-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
+}
+
+.hc-admin-shortcut-icon {
+    display: inline-grid;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    border-radius: 0.9rem;
+    color: var(--hc-primary-dark);
+    background: var(--hc-primary-soft);
+    font-size: 1.35rem;
+}
+
+.hc-admin-thumbnail {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--hc-border);
+    border-radius: 0.75rem;
+    object-fit: cover;
+    background: #f1f5f9;
+}
+
+.hc-admin-thumbnail-round {
+    border-radius: 50%;
+}
+
+.hc-admin-thumbnail-large {
+    width: 9rem;
+    height: 9rem;
+}
+
+.hc-admin-main .form-label {
+    color: #334155;
+    font-weight: 600;
+}
+
+.hc-admin-main .form-control,
+.hc-admin-main .form-select {
+    min-height: 2.75rem;
+    border-color: #cbd5e1;
+}
+
+.hc-admin-main textarea.form-control {
+    min-height: auto;
+}
+
+.hc-admin-main .hc-admin-card .card-body {
+    padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.hc-admin-navbar .nav-link:hover,
+.hc-admin-navbar .nav-link.active {
+    color: #fff;
+}
+
+.hc-admin-main {
+    width: min(100%, 90rem);
+    margin: 0 auto;
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.hc-admin-page-title {
+    margin-bottom: 0.25rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 750;
+    letter-spacing: -0.025em;
+}
+
+.hc-admin-card {
+    overflow: hidden;
+    border: 1px solid var(--hc-border);
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.045);
+}
+
+.hc-admin-card-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--hc-border);
+    background: #fff;
+    font-weight: 700;
+}
+
+.hc-admin-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--hc-border);
+    border-radius: 0.85rem;
+    background: #fff;
+}
+
+.hc-admin-table {
+    min-width: 42rem;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.hc-admin-table thead th {
+    color: #475569;
+    background: #f8fafc;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.hc-admin-table > :not(caption) > * > * {
+    padding: 0.85rem 1rem;
+    border-color: var(--hc-border);
+}
+
+.hc-admin-footer {
+    border-top: 1px solid var(--hc-border);
+    color: var(--hc-muted);
+    background: #fff;
+}
+
+@media (max-width: 575.98px) {
+    .auth-card {
+        padding: 1.35rem;
+    }
+
+    .hc-admin-main {
+        padding: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

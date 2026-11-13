@@ -1,0 +1,139 @@
+﻿@model HealthCareManagementSystem.ViewModels.DoctorVM
+
+@{
+    ViewData["Title"] = "Create Doctor";
+}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="hc-admin-card">
+
+                <div class="hc-admin-card-header">
+                    <h2 class="h5 mb-0">
+                        <i class="bi bi-person-badge me-2" aria-hidden="true"></i>Doctor details
+                    </h3>
+                </div>
+
+                <div class="card-body">
+
+                    <form asp-action="Create"
+                          method="post"
+                          enctype="multipart/form-data">
+
+                        <div asp-validation-summary="ModelOnly"
+                             class="text-danger mb-3">
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label asp-for="Name"
+                                   class="form-label">
+                            </label>
+
+                            <input asp-for="Name"
+                                   class="form-control"
+                                   placeholder="Enter doctor name" />
+
+                            <span asp-validation-for="Name"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label asp-for="Specialization"
+                                   class="form-label">
+                            </label>
+
+                            <input asp-for="Specialization"
+                                   class="form-control"
+                                   placeholder="Enter specialization" />
+
+                            <span asp-validation-for="Specialization"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label asp-for="ClinicId"
+                                   class="form-label">
+                                Clinic
+                            </label>
+
+                            <select asp-for="ClinicId"
+                                    asp-items="ViewBag.Clinics"
+                                    class="form-select">
+
+                                <option value="">
+                                    -- Select Clinic --
+                                </option>
+
+                            </select>
+
+                            <span asp-validation-for="ClinicId"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label asp-for="Image"
+                                   class="form-label">
+                            </label>
+
+                            <input asp-for="Image"
+                                   class="form-control" />
+
+                            <span asp-validation-for="Image"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input asp-for="CreateLogin" class="form-check-input" />
+                            <label asp-for="CreateLogin" class="form-check-label">Create a Doctor login account</label>
+                        </div>
+
+                        <div class="border rounded p-3 mb-4">
+                            <p class="text-muted small">Optional. When enabled, SuperAdmin creates a sign-in account linked to this doctor profile.</p>
+                            <div class="mb-3"><label asp-for="Email" class="form-label"></label><input asp-for="Email" class="form-control" /><span asp-validation-for="Email" class="text-danger"></span></div>
+                            <div class="mb-3"><label asp-for="UserName" class="form-label"></label><input asp-for="UserName" class="form-control" /><span asp-validation-for="UserName" class="text-danger"></span></div>
+                            <div class="mb-3"><label asp-for="Password" class="form-label"></label><input asp-for="Password" class="form-control" autocomplete="new-password" /><span asp-validation-for="Password" class="text-danger"></span></div>
+                            <div><label asp-for="ConfirmPassword" class="form-label"></label><input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" /><span asp-validation-for="ConfirmPassword" class="text-danger"></span></div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+
+                            <a asp-action="Index"
+                                class="btn btn-outline-secondary">
+                                Back
+                            </a>
+
+                            <button type="submit"
+                                    class="btn btn-primary">
+                                Save Doctor
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

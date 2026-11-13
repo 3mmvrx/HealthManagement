@@ -1,0 +1,74 @@
+@model IReadOnlyList<Appointment>
+
+@{
+    ViewData["Title"] = "My appointments";
+}
+
+<section class="container py-5">
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-end gap-3 mb-4">
+        <div>
+            <span class="hc-eyebrow">Patient portal</span>
+            <h1 class="h2 mt-2 mb-1">My appointments</h1>
+            <p class="text-muted mb-0">Review appointment requests and visit details.</p>
+        </div>
+        <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="doctors">
+            <i class="bi bi-search me-1" aria-hidden="true"></i>Find a doctor
+        </a>
+    </div>
+
+    @if (Model.Count == 0)
+    {
+        <div class="hc-card p-4 p-md-5 text-center">
+            <i class="bi bi-calendar2-x display-6 text-muted" aria-hidden="true"></i>
+            <h2 class="h5 mt-3">No appointments yet</h2>
+            <p class="text-muted">Choose a doctor and an available time to request your first appointment.</p>
+            <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="doctors">Browse doctors</a>
+        </div>
+    }
+    else
+    {
+        <div class="hc-card p-3 p-md-4">
+            <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                    <caption class="visually-hidden">Your appointments, newest first</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Doctor</th>
+                            <th scope="col">Clinic</th>
+                            <th scope="col">Date and time</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Reason</th>
+                            <th scope="col"><span class="visually-hidden">Actions</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var appointment in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <a asp-area="@CD.PATIENT_AREA" asp-controller="Doctor" asp-action="Details" asp-route-id="@appointment.DoctorId">
+                                        @appointment.Doctor.Name
+                                    </a>
+                                    <div class="small text-muted">@appointment.Doctor.Specialization</div>
+                                </td>
+                                <td>@appointment.Doctor.Clinic.Name</td>
+                                <td>@appointment.AppointmentDate.ToString("ddd, MMM d, yyyy h:mm tt")</td>
+                                <td><span class="badge @AppointmentRules.BadgeClass(appointment.Status)">@appointment.Status</span></td>
+                                <td>@(string.IsNullOrWhiteSpace(appointment.Reason) ? "—" : appointment.Reason)</td>
+                                <td class="text-end">
+                                    @if (AppointmentRules.IsActive(appointment.Status))
+                                    {
+                                        <form asp-area="@CD.PATIENT_AREA" asp-controller="Appointment" asp-action="Cancel" asp-route-id="@appointment.Id" method="post">
+                                            <button class="btn btn-outline-danger btn-sm" type="submit">Cancel</button>
+                                        </form>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <p class="small text-muted mt-3 mb-0">Online cancellation is subject to the clinic's cancellation cutoff. Call the clinic if your visit is too close to cancel online.</p>
+        </div>
+    }
+</section>

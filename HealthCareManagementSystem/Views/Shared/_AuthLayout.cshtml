@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HealthCare</title>
+    <link rel="icon" href="~/favicon.ico" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body class="auth-body">
+    <a class="hc-skip-link" href="#main-content">Skip to main content</a>
+    <partial name="_Notifications" />
+
+    <div class="auth-shell">
+        <aside class="auth-side d-none d-lg-flex">
+            <a class="hc-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">
+                <i class="bi bi-heart-pulse-fill"></i> HealthCare
+            </a>
+
+            <div>
+                <h2 class="fw-bold mb-3">Your health, organised.</h2>
+                <ul class="list-unstyled auth-points">
+                    <li><i class="bi bi-calendar2-check"></i> Request appointments with available doctors</li>
+                    <li><i class="bi bi-clock-history"></i> Track upcoming and past visits</li>
+                    <li><i class="bi bi-shield-lock"></i> Your account is protected with secure sign-in</li>
+                </ul>
+            </div>
+
+            <small class="opacity-75">&copy; @DateTime.Now.Year HealthCare Management System</small>
+        </aside>
+
+        <main id="main-content" class="auth-main">
+            <div class="auth-card">
+                <a class="hc-brand d-lg-none mb-4 d-inline-block" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-heart-pulse-fill"></i> HealthCare
+                </a>
+
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

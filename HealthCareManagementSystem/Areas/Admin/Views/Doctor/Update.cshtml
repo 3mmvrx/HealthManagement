@@ -1,0 +1,138 @@
+﻿@model HealthCareManagementSystem.ViewModels.DoctorVM
+
+@{
+    ViewData["Title"] = "Update Doctor";
+}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="hc-admin-card">
+
+                <div class="hc-admin-card-header">
+                    <h2 class="h5 mb-0">
+                        <i class="bi bi-person-badge me-2" aria-hidden="true"></i>Doctor details
+                    </h3>
+                </div>
+
+                <div class="card-body">
+
+                    <form asp-action="Update"
+                          method="post"
+                          enctype="multipart/form-data">
+
+                        <div asp-validation-summary="ModelOnly"
+                             class="text-danger mb-3">
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label asp-for="Name"
+                                   class="form-label">
+                            </label>
+
+                            <input asp-for="Name"
+                                   class="form-control"
+                                   placeholder="Enter doctor name" />
+
+                            <span asp-validation-for="Name"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label asp-for="Specialization"
+                                   class="form-label">
+                            </label>
+
+                            <input asp-for="Specialization"
+                                   class="form-control"
+                                   placeholder="Enter specialization" />
+
+                            <span asp-validation-for="Specialization"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label asp-for="ClinicId"
+                                   class="form-label">
+                                Clinic
+                            </label>
+
+                            <select asp-for="ClinicId"
+                                    asp-items="ViewBag.Clinics"
+                                    class="form-select">
+
+                                <option value="">
+                                    -- Select Clinic --
+                                </option>
+
+                            </select>
+
+                            <span asp-validation-for="ClinicId"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label asp-for="Image"
+                                   class="form-label">
+                            </label>
+
+                            <input asp-for="Image"
+                                   class="form-control" />
+
+                            <span asp-validation-for="Image"
+                                  class="text-danger"></span>
+
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+
+                            <a asp-action="Index"
+                                class="btn btn-outline-secondary">
+                                Back
+                            </a>
+
+                            <div class="d-flex gap-2">
+                                @if (User.IsInRole(CD.SUPER_ADMIN_ROLE) && string.IsNullOrWhiteSpace(Model.ApplicationUserId))
+                                {
+                                    <a asp-action="CreateLogin" asp-route-id="@Model.Id" class="btn btn-outline-success">Create doctor login</a>
+                                }
+                                @if (User.IsInRole(CD.SUPER_ADMIN_ROLE) && !string.IsNullOrWhiteSpace(Model.ApplicationUserId))
+                                {
+                                    <span class="badge text-bg-success align-self-center">Doctor login enabled</span>
+                                }
+                                <a asp-action="Schedules" asp-route-id="@Model.Id" class="btn btn-outline-primary">
+                                    Manage availability
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    Save Doctor
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

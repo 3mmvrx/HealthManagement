@@ -1,0 +1,83 @@
+﻿@model HealthCareManagementSystem.Models.Doctor
+
+@{
+    ViewData["Title"] = "Delete Doctor";
+}
+
+<div class="container mt-5">
+
+    <div class="hc-admin-card">
+
+        <div class="hc-admin-card-header">
+            <h2 class="h5 mb-0">Confirm doctor deletion</h2>
+        </div>
+
+        <div class="card-body">
+
+            <h5 class="text-danger-emphasis">
+                Are you sure you want to delete this doctor?
+            </h5>
+
+            <hr />
+
+            <div class="row">
+
+                <div class="col-md-3 text-center">
+
+                    @if (!string.IsNullOrEmpty(Model.ImageName))
+                    {
+                        <img src="@Url.Content(ImagePaths.Doctor(Model.ImageName))"
+                             alt="@Model.Name"
+                             class="hc-admin-thumbnail hc-admin-thumbnail-large" />
+                    }
+                    else
+                    {
+                        <img src="@Url.Content(ImagePaths.Doctor(null))"
+                             alt=""
+                             class="hc-admin-thumbnail hc-admin-thumbnail-large" />
+                    }
+
+                </div>
+
+                <div class="col-md-9">
+
+                    <dl class="row">
+
+                        <dt class="col-sm-4">Name</dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
+
+                        <dt class="col-sm-4">Specialization</dt>
+                        <dd class="col-sm-8">@Model.Specialization</dd>
+
+                        <dt class="col-sm-4">Clinic</dt>
+                        <dd class="col-sm-8">@Model.Clinic.Name</dd>
+
+                    </dl>
+
+                </div>
+
+            </div>
+
+            <form asp-action="Delete"
+                  asp-route-id="@Model.Id"
+                  method="post">
+
+                @Html.AntiForgeryToken()
+
+                <a asp-action="Index"
+                   class="btn btn-outline-secondary">
+                    Back
+                </a>
+
+                <button type="submit"
+                        class="btn btn-danger">
+                    Delete
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,28 @@
+@model AdminUserFormVM
+@{
+    ViewData["Title"] = "Edit user";
+}
+
+<section class="container py-4">
+    <div class="hc-admin-card p-4 mx-auto" style="max-width: 760px">
+        <h2 class="h4 mb-4">Edit account</h2>
+        <form asp-action="Edit" method="post">
+            <input asp-for="Id" type="hidden" />
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <div class="row g-3">
+                <div class="col-md-6"><label asp-for="Name" class="form-label"></label><input asp-for="Name" class="form-control" /><span asp-validation-for="Name" class="text-danger"></span></div>
+                <div class="col-md-6"><label asp-for="UserName" class="form-label"></label><input asp-for="UserName" class="form-control" /><span asp-validation-for="UserName" class="text-danger"></span></div>
+                <div class="col-md-6"><label asp-for="Email" class="form-label"></label><input asp-for="Email" type="email" class="form-control" /><span asp-validation-for="Email" class="text-danger"></span></div>
+                <div class="col-md-6"><label asp-for="Address" class="form-label"></label><input asp-for="Address" class="form-control" /><span asp-validation-for="Address" class="text-danger"></span></div>
+                <div class="col-md-6"><label asp-for="Role" class="form-label"></label><select asp-for="Role" asp-items="ViewBag.Roles" class="form-select" disabled="@(Model.Role == CD.DOCTOR_ROLE)"></select>@if (Model.Role == CD.DOCTOR_ROLE) { <input asp-for="Role" type="hidden" /> }<span asp-validation-for="Role" class="text-danger"></span></div>
+                <div class="col-md-6"><label asp-for="Gender" class="form-label"></label><select asp-for="Gender" class="form-select"><option value="">Not applicable</option><option>Female</option><option>Male</option></select><span asp-validation-for="Gender" class="text-danger"></span></div>
+                <div class="col-md-6"><label asp-for="DateOfBirth" class="form-label"></label><input asp-for="DateOfBirth" type="date" min="@DateTime.Today.AddYears(-99).ToString("yyyy-MM-dd")" max="@DateTime.Today.AddYears(-13).ToString("yyyy-MM-dd")" class="form-control" /><span asp-validation-for="DateOfBirth" class="text-danger"></span></div>
+                <div class="col-md-6"><label asp-for="Password" class="form-label">New password (optional)</label><input asp-for="Password" class="form-control" autocomplete="new-password" /><span asp-validation-for="Password" class="text-danger"></span></div>
+                <div class="col-md-6"><label asp-for="ConfirmPassword" class="form-label"></label><input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" /><span asp-validation-for="ConfirmPassword" class="text-danger"></span></div>
+            </div>
+            <p class="form-text mt-3">Changing the e-mail address resets its confirmed status. Gender and date of birth are required for Patient accounts. Doctor role is maintained through the linked doctor profile.</p>
+            <div class="d-flex justify-content-between mt-4"><a asp-action="Index" class="btn btn-outline-secondary">Cancel</a><button type="submit" class="btn btn-primary">Save changes</button></div>
+        </form>
+    </div>
+</section>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

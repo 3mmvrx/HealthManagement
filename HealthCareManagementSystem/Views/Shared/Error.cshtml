@@ -1,0 +1,39 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Something went wrong";
+
+    var heading = Model.StatusCode switch
+    {
+        404 => "We couldn't find that page",
+        403 => "You don't have access to that page",
+        401 => "Please sign in first",
+        429 => "Too many requests",
+        _ => "Something went wrong"
+    };
+
+    var text = Model.StatusCode switch
+    {
+        404 => "The page you are looking for may have been moved, deleted, or the address may be mistyped.",
+        403 => "Your account is not allowed to open this page. If you think this is a mistake, contact an administrator.",
+        401 => "You need to sign in to continue.",
+        429 => "You have made a lot of requests in a short time. Please wait a minute and try again.",
+        _ => "An unexpected error occurred while processing your request. Please try again in a moment."
+    };
+}
+
+<div class="container py-5">
+    <div class="hc-empty mx-auto" style="max-width: 560px;">
+        <div class="display-1 fw-bold text-primary">@(Model.StatusCode?.ToString() ?? "Oops")</div>
+        <h1 class="h3 mt-2">@heading</h1>
+        <p class="text-muted">@text</p>
+
+        <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Index">
+            <i class="bi bi-house-door me-1"></i>Back to the home page
+        </a>
+
+        @if (Model.ShowRequestId)
+        {
+            <p class="small text-muted mt-4 mb-0">Request ID: <code>@Model.RequestId</code></p>
+        }
+    </div>
+</div>

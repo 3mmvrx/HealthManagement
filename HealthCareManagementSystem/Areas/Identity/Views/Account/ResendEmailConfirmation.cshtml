@@ -1,0 +1,12 @@
+@model ResendEmailConfirmationVM
+@{
+    ViewData["Title"] = "Email confirmation disabled";
+}
+
+<h1 class="h3 mb-2">Email confirmation disabled</h1>
+<p class="text-muted mb-4">Email confirmation is temporarily disabled. You can sign in without confirming your email address.</p>
+<a asp-action="Login" class="btn btn-primary btn-lg w-100">Go to login</a>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

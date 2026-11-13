@@ -1,0 +1,146 @@
+﻿FileId: 7
+```razor HealthCareManagementSystem\Views\Home\Index.cshtml
+1: @model HomeIndexVM
+2: @{
+3:     ViewData["Title"] = "Home";
+4:     var signedIn = User.Identity?.IsAuthenticated == true;
+5: }
+6: 
+7: <section class="hc-hero">
+8:     <div class="container">
+9:         <div class="row align-items-center g-5">
+10:             <div class="col-lg-7">
+11:                 <span class="hc-eyebrow">Online appointment booking</span>
+12:                 <h1 class="display-5 fw-bold mt-2">Find the right doctor and book a visit in minutes.</h1>
+13:                 <p class="lead text-muted mt-3">
+14:                     Browse our clinics and doctors, pick a time that suits you, and keep track of every appointment in one place.
+15:                 </p>
+16: 
+17:                 <div class="d-flex flex-wrap gap-2 mt-4">
+18:                     @if (User.IsInRole(CD.PATIENT_ROLE))
+19:                     {
+20:                         <a class="btn btn-primary btn-lg" asp-area="@CD.PATIENT_AREA" asp-controller="Doctor" asp-action="Index"><i class="bi bi-search me-1"></i>Find a doctor</a>
+21:                         <a class="btn btn-outline-primary btn-lg" asp-area="@CD.PATIENT_AREA" asp-controller="Appointment" asp-action="Index">My appointments</a>
+22:                     }
+23:                     else if (User.IsStaff())
+24:                     {
+25:                         <a class="btn btn-primary btn-lg" asp-area="@CD.ADMIN_AREA" asp-controller="Home" asp-action="Index"><i class="bi bi-speedometer2 me-1"></i>Open the dashboard</a>
+26:                     }
+27:                     else if (!signedIn)
+28:                     {
+29:                         <a class="btn btn-primary btn-lg" asp-area="@CD.IDENTITY_AREA" asp-controller="Account" asp-action="Register">Create a free account</a>
+30:                         <a class="btn btn-outline-primary btn-lg" asp-area="@CD.IDENTITY_AREA" asp-controller="Account" asp-action="Login">Log in</a>
+31:                     }
+32:                     else
+33:                     {
+34:                         <a class="btn btn-primary btn-lg" asp-area="@CD.IDENTITY_AREA" asp-controller="Profile" asp-action="Index">My profile</a>
+35:                     }
+36:                 </div>
+37:             </div>
+38: 
+39:             <div class="col-lg-5">
+40:                 <div class="hc-card p-4">
+41:                     <div class="row text-center g-3">
+42:                         <div class="col-6">
+43:                             <div class="hc-stat-number">@Model.ClinicCount</div>
+44:                             <div class="text-muted">@(Model.ClinicCount == 1 ? "Clinic" : "Clinics")</div>
+45:                         </div>
+46:                         <div class="col-6">
+47:                             <div class="hc-stat-number">@Model.DoctorCount</div>
+48:                             <div class="text-muted">@(Model.DoctorCount == 1 ? "Doctor" : "Doctors")</div>
+49:                         </div>
+50:                     </div>
+51:                     <hr />
+52:                     <ul class="list-unstyled mb-0 hc-points">
+53:                         <li><i class="bi bi-check-circle-fill text-primary"></i> Real-time free time slots</li>
+54:                         <li><i class="bi bi-check-circle-fill text-primary"></i> Confirmation and reminders by e-mail</li>
+55:                         <li><i class="bi bi-check-circle-fill text-primary"></i> Cancel or review visits any time</li>
+56:                     </ul>
+57:                 </div>
+58:             </div>
+59:         </div>
+60:     </div>
+61: </section>
+62: 
+63: @if (Model.Doctors.Count > 0)
+64: {
+65:     <section class="container py-5">
+66:         <div class="d-flex justify-content-between align-items-end mb-4">
+67:             <div>
+68:                 <h2 class="h3 mb-1">Meet our doctors</h2>
+69:                 <p class="text-muted mb-0">Experienced specialists ready to help.</p>
+70:             </div>
+71:             @if (User.IsInRole(CD.PATIENT_ROLE))
+72:             {
+73:                 <a class="btn btn-outline-primary btn-sm" asp-area="@CD.PATIENT_AREA" asp-controller="Doctor" asp-action="Index">See all</a>
+74:             }
+75:         </div>
+76: 
+77:         <div class="row g-4">
+78:             @foreach (var doctor in Model.Doctors)
+79:             {
+80:                 <div class="col-sm-6 col-lg-3">
+81:                     <div class="hc-card h-100 text-center p-4">
+82:                         <img class="hc-avatar hc-avatar-lg mb-3" src="@Url.Content(ImagePaths.Doctor(doctor.ImageName))" alt="@doctor.Name" />
+83:                         <h3 class="h6 mb-1">@doctor.Name</h3>
+84:                         <span class="badge text-bg-light border">@doctor.Specialization</span>
+85:                         <div class="small text-muted mt-2"><i class="bi bi-hospital me-1"></i>@doctor.Clinic?.Name</div>
+86:                         <a class="btn btn-sm btn-primary mt-3" asp-area="@CD.PATIENT_AREA" asp-controller="Doctor" asp-action="Details" asp-route-id="@doctor.Id">View &amp; book</a>
+87:                     </div>
+88:                 </div>
+89:             }
+90:         </div>
+91:     </section>
+92: }
+93: 
+94: @if (Model.Clinics.Count > 0)
+95: {
+96:     <section class="hc-band py-5">
+97:         <div class="container">
+98:             <h2 class="h3 mb-1">Our clinics</h2>
+99:             <p class="text-muted mb-4">Find a clinic close to you.</p>
+100: 
+101:             <div class="row g-4">
+102:                 @foreach (var clinic in Model.Clinics)
+103:                 {
+104:                     <div class="col-md-6 col-lg-4">
+105:                         <div class="hc-card h-100 overflow-hidden">
+106:                             <img class="hc-cover" src="@Url.Content(ImagePaths.Clinic(clinic.ImageName))" alt="@clinic.Name" />
+107:                             <div class="p-3">
+108:                                 <h3 class="h6 mb-2">@clinic.Name</h3>
+109:                                 <div class="small text-muted"><i class="bi bi-geo-alt me-1"></i>@clinic.Address</div>
+110:                                 <div class="small text-muted"><i class="bi bi-telephone me-1"></i>@clinic.PhoneNumber</div>
+111:                                 @if (!string.IsNullOrWhiteSpace(clinic.Description))
+112:                                 {
+113:                                     <p class="small mt-2 mb-0 hc-clamp">@clinic.Description</p>
+114:                                 }
+115:                             </div>
+116:                         </div>
+117:                     </div>
+118:                 }
+119:             </div>
+120:         </div>
+121:     </section>
+122: }
+123: 
+124: <section class="container py-5">
+125:     <h2 class="h3 text-center mb-4">How it works</h2>
+126:     <div class="row g-4 text-center">
+127:         <div class="col-md-4">
+128:             <div class="hc-step"><i class="bi bi-person-plus"></i></div>
+129:             <h3 class="h6 mt-3">1. Create an account</h3>
+130:             <p class="text-muted small">Register and confirm your e-mail address.</p>
+131:         </div>
+132:         <div class="col-md-4">
+133:             <div class="hc-step"><i class="bi bi-calendar2-week"></i></div>
+134:             <h3 class="h6 mt-3">2. Pick a time</h3>
+135:             <p class="text-muted small">Choose a doctor and one of the free time slots.</p>
+136:         </div>
+137:         <div class="col-md-4">
+138:             <div class="hc-step"><i class="bi bi-check2-circle"></i></div>
+139:             <h3 class="h6 mt-3">3. Get confirmed</h3>
+140:             <p class="text-muted small">The clinic confirms your visit and you see it in your list.</p>
+141:         </div>
+142:     </div>
+143: </section>
+```

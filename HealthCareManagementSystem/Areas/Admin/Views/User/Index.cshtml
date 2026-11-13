@@ -1,0 +1,92 @@
+﻿@model AdminUsersPageVM
+@{
+    ViewData["Title"] = "Users";
+    var isSuperAdmin = User.IsInRole(CD.SUPER_ADMIN_ROLE);
+}
+@* Retain dashboard links *@
+
+<section aria-label="User management">
+    <div class="d-flex flex-column flex-sm-row justify-content-between gap-3 mb-4">
+        <p class="text-muted mb-0">Review account confirmation and access status.</p>
+        @if (isSuperAdmin)
+        {
+            <a asp-action="Create" class="btn btn-primary"><i class="bi bi-person-plus me-1" aria-hidden="true"></i>Add user</a>
+        }
+    </div>
+
+    <div class="hc-admin-table-wrap">
+        <table class="table table-hover hc-admin-table">
+            <caption class="visually-hidden">Registered users</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">User name</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Confirmation</th>
+                        <th scope="col">Account access</th>
+                        @if (isSuperAdmin)
+                        {
+                            <th scope="col">Manage</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Users.Count > 0)
+                    {
+                        @foreach (var row in Model.Users)
+                        {
+                            var item = row.User;
+                            <tr>
+                                <th scope="row">@item.UserName</th>
+                                <td>@item.Name</td>
+                                <td>@item.Email</td>
+                                <td>@string.Join(", ", row.Roles)</td>
+                                <td>
+                                    @if (item.EmailConfirmed)
+                                    {
+                                        <span class="badge text-bg-success">Confirmed</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge text-bg-warning">Pending</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (isSuperAdmin || User.IsInRole(CD.ADMIN_ROLE))
+                                    {
+                                        <form asp-action="LockUnLock" asp-route-id="@item.Id" method="post" class="d-inline">
+                                            <button type="submit" class="btn btn-sm @(row.IsLocked ? "btn-outline-success" : "btn-outline-danger")" disabled="@(row.Roles.Contains(CD.SUPER_ADMIN_ROLE))">
+                                                @(row.IsLocked ? "Unlock" : "Lock")
+                                            </button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">View only</span>
+                                    }
+                                </td>
+                                @if (isSuperAdmin)
+                                {
+                                    <td class="text-nowrap">
+                                        @if (!item.EmailConfirmed)
+                                        {
+                                            <form asp-action="ConfirmEmail" asp-route-id="@item.Id" method="post" class="d-inline">
+                                                <button type="submit" class="btn btn-sm btn-outline-success">Confirm</button>
+                                            </form>
+                                        }
+                                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Edit</a>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Delete</a>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td colspan="@(isSuperAdmin ? 7 : 6)" class="text-center text-muted py-4">No user accounts found.</td></tr>
+                    }
+                </tbody>
+        </table>
+    </div>
+</section>

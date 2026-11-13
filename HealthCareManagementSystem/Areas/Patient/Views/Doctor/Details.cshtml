@@ -1,0 +1,105 @@
+@model DoctorDetailsVM
+
+@{
+    ViewData["Title"] = Model.Doctor.Name;
+}
+
+<section class="container py-5">
+    <div class="hc-card p-4 p-md-5">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-4 text-center">
+                <img class="hc-avatar hc-avatar-lg" src="@Url.Content(ImagePaths.Doctor(Model.Doctor.ImageName))" alt="@Model.Doctor.Name" />
+            </div>
+            <div class="col-md-8">
+                <span class="hc-eyebrow">Doctor profile</span>
+                <h1 class="h2 mt-2">@Model.Doctor.Name</h1>
+                <p class="mb-4"><span class="badge text-bg-light border">@Model.Doctor.Specialization</span></p>
+
+                <h2 class="h5">Clinic</h2>
+                <p class="mb-1">@Model.Doctor.Clinic.Name</p>
+                <p class="text-muted mb-1">@Model.Doctor.Clinic.Address</p>
+                <p class="text-muted mb-4">@Model.Doctor.Clinic.PhoneNumber</p>
+
+                <a class="btn btn-outline-primary" asp-area="" asp-controller="Home" asp-action="Index">Back to home</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hc-card p-4 p-md-5 mt-4">
+        <div class="mb-4">
+            <span class="hc-eyebrow">Appointment booking</span>
+            <h2 class="h3 mt-2">Choose a time with @Model.Doctor.Name</h2>
+            <p class="text-muted mb-0">Times are shown in the clinic's local time. Choose a date with open slots, then submit your request.</p>
+        </div>
+
+        @if (Model.AvailableDays.Count == 0)
+        {
+            <div class="alert alert-info mb-0" role="status">
+                No appointment times are currently available. Please contact @Model.Doctor.Clinic.Name at @Model.Doctor.Clinic.PhoneNumber.
+            </div>
+        }
+        else
+        {
+            <h3 class="h6">Available dates</h3>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                @foreach (var day in Model.AvailableDays)
+                {
+                    <a class="btn @(Model.SelectedDate == day.Date ? "btn-primary" : "btn-outline-primary")"
+                       asp-area="@CD.PATIENT_AREA"
+                       asp-controller="Doctor"
+                       asp-action="Details"
+                       asp-route-id="@Model.Doctor.Id"
+                       asp-route-date="@day.Date.ToString("yyyy-MM-dd")">
+                        @day.Date.ToString("ddd, MMM d") <span class="badge text-bg-light ms-1">@day.FreeCount</span>
+                    </a>
+                }
+            </div>
+
+            @if (Model.SelectedDate is null)
+            {
+                <div class="alert alert-info" role="status">Choose an available date to see its appointment times.</div>
+            }
+            else if (Model.AvailableSlots.Count == 0)
+            {
+                <div class="alert alert-info" role="status">No appointment times remain for this date. Choose another date.</div>
+            }
+            else
+            {
+                <form asp-area="@CD.PATIENT_AREA" asp-controller="Doctor" asp-action="Book" method="post">
+                    <input asp-for="Booking.DoctorId" type="hidden" />
+                    <input asp-for="Booking.SelectedDate" type="hidden" />
+
+                    <fieldset class="mb-4">
+                        <legend class="h6">Available times</legend>
+                        <div class="row g-2">
+                            @foreach (var slot in Model.AvailableSlots)
+                            {
+                                var slotId = $"slot-{slot.Start:yyyyMMddHHmm}";
+                                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                                    <input class="btn-check" type="radio" name="Booking.SlotStart"
+                                           id="@slotId" value="@slot.Start.ToString("yyyy-MM-dd'T'HH:mm:ss")" required />
+                                    <label class="btn btn-outline-primary w-100" for="@slotId">@slot.Start.ToString("h:mm tt")</label>
+                                </div>
+                            }
+                        </div>
+                    </fieldset>
+
+                    <div class="mb-4">
+                        <label asp-for="Booking.Reason" class="form-label"></label>
+                        <textarea asp-for="Booking.Reason" class="form-control" rows="3" maxlength="500"
+                                  placeholder="Add a short note for the clinic (optional)"></textarea>
+                        <span asp-validation-for="Booking.Reason" class="text-danger small"></span>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">
+                        <i class="bi bi-calendar2-check me-1" aria-hidden="true"></i>Book appointment
+                    </button>
+                </form>
+            }
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

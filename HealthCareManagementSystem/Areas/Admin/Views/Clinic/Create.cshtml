@@ -1,0 +1,75 @@
+﻿@model HealthCareManagementSystem.ViewModels.ClinicVM
+
+@{
+    ViewData["Title"] = "Create Clinic";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- تم تعديل الـ shadow وإضافة border خفيف ليفصل عن الخلفية البيضاء -->
+            <div class="hc-admin-card">
+
+                <!-- تغيير الهيدر للون غامق راقي (Dark) أو تقدر تخليه bg-info لو حابب ستايل طبي -->
+                <div class="hc-admin-card-header">
+                    <h3 class="mb-0 fs-4 fw-semibold">
+                        <i class="bi bi-hospital me-2" aria-hidden="true"></i> Clinic details
+                    </h3>
+                </div>
+
+                <div class="card-body p-4 bg-white">
+                    <form asp-action="Create" method="post" enctype="multipart/form-data">
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label fw-medium text-secondary"></label>
+                            <input asp-for="Name" class="form-control border-secondary-subtle" placeholder="Enter clinic name" />
+                            <span asp-validation-for="Name" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Address" class="form-label fw-medium text-secondary"></label>
+                            <input asp-for="Address" class="form-control border-secondary-subtle" placeholder="Enter clinic address" />
+                            <span asp-validation-for="Address" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label fw-medium text-secondary"></label>
+                            <input asp-for="PhoneNumber" class="form-control border-secondary-subtle" placeholder="Enter phone number" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label fw-medium text-secondary"></label>
+                            <textarea asp-for="Description" rows="4" class="form-control border-secondary-subtle" placeholder="Clinic description"></textarea>
+                            <span asp-validation-for="Description" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Image" class="form-label fw-medium text-secondary"></label>
+                            <input asp-for="Image" class="form-control border-secondary-subtle" />
+                            <span asp-validation-for="Image" class="text-danger small"></span>
+                        </div>
+
+                        <div class="d-flex justify-content-between pt-2 border-top border-light-subtle">
+                            <!-- زر العودة بلون رمادي هادئ متناسق -->
+                            <a asp-action="Index" class="btn btn-outline-secondary px-4">
+                                Cancel
+                            </a>
+                            <!-- زر الحفظ بلون داكن يتماشى مع الهيدر -->
+                            <button type="submit" class="btn btn-primary px-4">
+                                Save Clinic
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

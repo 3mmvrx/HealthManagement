@@ -1,0 +1,139 @@
+@model HomeIndexVM
+@{
+    ViewData["Title"] = "Home";
+    var signedIn = User.Identity?.IsAuthenticated == true;
+}
+
+<section class="hc-hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+                <span class="hc-eyebrow">Online appointment booking</span>
+                <h1 class="display-5 fw-bold mt-2">Find the right doctor and request a visit online.</h1>
+                <p class="lead text-muted mt-3">
+                    Browse doctor profiles, choose an available time, and track your appointment request.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    @if (User.IsInRole(CD.PATIENT_ROLE))
+                    {
+                        <a class="btn btn-primary btn-lg" href="#doctors"><i class="bi bi-search me-1"></i>Browse doctors</a>
+                        <a class="btn btn-outline-primary btn-lg" asp-area="@CD.PATIENT_AREA" asp-controller="Appointment" asp-action="Index">My appointments</a>
+                    }
+                    else if (User.IsStaff())
+                    {
+                        <a class="btn btn-primary btn-lg" asp-area="@CD.ADMIN_AREA" asp-controller="Home" asp-action="Index"><i class="bi bi-speedometer2 me-1"></i>Open the dashboard</a>
+                    }
+                    else if (!signedIn)
+                    {
+                        <a class="btn btn-primary btn-lg" asp-area="@CD.IDENTITY_AREA" asp-controller="Account" asp-action="Register">Create a free account</a>
+                        <a class="btn btn-outline-primary btn-lg" asp-area="@CD.IDENTITY_AREA" asp-controller="Account" asp-action="Login">Log in</a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-primary btn-lg" asp-area="@CD.IDENTITY_AREA" asp-controller="Profile" asp-action="Index">My profile</a>
+                    }
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="hc-card p-4">
+                    <div class="row text-center g-3">
+                        <div class="col-6">
+                            <div class="hc-stat-number">@Model.ClinicCount</div>
+                            <div class="text-muted">@(Model.ClinicCount == 1 ? "Clinic" : "Clinics")</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="hc-stat-number">@Model.DoctorCount</div>
+                            <div class="text-muted">@(Model.DoctorCount == 1 ? "Doctor" : "Doctors")</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <ul class="list-unstyled mb-0 hc-points">
+                        <li><i class="bi bi-check-circle-fill text-primary"></i> Real-time available appointment slots</li>
+                        <li><i class="bi bi-check-circle-fill text-primary"></i> Appointment request status updates</li>
+                        <li><i class="bi bi-check-circle-fill text-primary"></i> Review and cancel eligible visits online</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@if (Model.Doctors.Count > 0)
+{
+    <section id="doctors" class="container py-5">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <div>
+                <h2 class="h3 mb-1">Meet our doctors</h2>
+                <p class="text-muted mb-0">Experienced specialists ready to help.</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            @foreach (var doctor in Model.Doctors)
+            {
+                <div class="col-sm-6 col-lg-3">
+                    <div class="hc-card h-100 text-center p-4">
+                        <img class="hc-avatar hc-avatar-lg mb-3" src="@Url.Content(ImagePaths.Doctor(doctor.ImageName))" alt="@doctor.Name" />
+                        <h3 class="h6 mb-1">@doctor.Name</h3>
+                        <span class="badge text-bg-light border">@doctor.Specialization</span>
+                        <div class="small text-muted mt-2"><i class="bi bi-hospital me-1"></i>@doctor.Clinic?.Name</div>
+                        <a class="btn btn-sm btn-primary mt-3" asp-area="@CD.PATIENT_AREA" asp-controller="Doctor" asp-action="Details" asp-route-id="@doctor.Id">View details</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+}
+
+@if (Model.Clinics.Count > 0)
+{
+    <section class="hc-band py-5">
+        <div class="container">
+            <h2 class="h3 mb-1">Our clinics</h2>
+            <p class="text-muted mb-4">Find a clinic close to you.</p>
+
+            <div class="row g-4">
+                @foreach (var clinic in Model.Clinics)
+                {
+                    <div class="col-md-6 col-lg-4">
+                        <div class="hc-card h-100 overflow-hidden">
+                            <img class="hc-cover" src="@Url.Content(ImagePaths.Clinic(clinic.ImageName))" alt="@clinic.Name" />
+                            <div class="p-3">
+                                <h3 class="h6 mb-2">@clinic.Name</h3>
+                                <div class="small text-muted"><i class="bi bi-geo-alt me-1"></i>@clinic.Address</div>
+                                <div class="small text-muted"><i class="bi bi-telephone me-1"></i>@clinic.PhoneNumber</div>
+                                @if (!string.IsNullOrWhiteSpace(clinic.Description))
+                                {
+                                    <p class="small mt-2 mb-0 hc-clamp">@clinic.Description</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}
+
+<section class="container py-5">
+    <h2 class="h3 text-center mb-4">How it works</h2>
+    <div class="row g-4 text-center">
+        <div class="col-md-4">
+            <div class="hc-step"><i class="bi bi-person-plus"></i></div>
+            <h3 class="h6 mt-3">1. Create an account</h3>
+            <p class="text-muted small">Set up your secure patient account.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="hc-step"><i class="bi bi-calendar2-week"></i></div>
+            <h3 class="h6 mt-3">2. Pick an available time</h3>
+            <p class="text-muted small">Choose a doctor and one of the clinic's available slots.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="hc-step"><i class="bi bi-check2-circle"></i></div>
+            <h3 class="h6 mt-3">3. Track your request</h3>
+            <p class="text-muted small">Review the appointment status in your patient portal.</p>
+        </div>
+    </div>
+</section>

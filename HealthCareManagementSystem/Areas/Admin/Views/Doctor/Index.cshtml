@@ -1,0 +1,116 @@
+﻿@model IEnumerable<HealthCareManagementSystem.Models.Doctor>
+
+@{
+    ViewData["Title"] = "Doctors";
+}
+
+<section aria-label="Doctor management">
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mb-4">
+
+        <p class="text-muted mb-0">Maintain doctor profiles and clinic assignments.</p>
+
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Add Doctor
+        </a>
+
+    </div>
+
+    <div class="hc-admin-table-wrap">
+        <table class="table table-hover hc-admin-table">
+            <caption class="visually-hidden">Doctor directory</caption>
+
+        <thead>
+
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Specialization</th>
+                <th scope="col">Clinic</th>
+                <th scope="col">Login</th>
+                <th scope="col">Actions</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @if (Model.Any())
+            {
+                @foreach (var doctor in Model)
+                {
+                    <tr>
+
+                        <td class="text-center">
+
+                            @if (!string.IsNullOrEmpty(doctor.ImageName))
+                            {
+                                <img src="@Url.Content(ImagePaths.Doctor(doctor.ImageName))"
+                                     alt="@doctor.Name"
+                                     class="hc-admin-thumbnail hc-admin-thumbnail-round" />
+                            }
+                            else
+                            {
+                                <img src="@Url.Content(ImagePaths.Doctor(null))"
+                                     alt=""
+                                     class="hc-admin-thumbnail hc-admin-thumbnail-round" />
+                            }
+
+                        </td>
+
+                        <td>@doctor.Name</td>
+
+                        <td>@doctor.Specialization</td>
+
+                        <td>@doctor.Clinic.Name</td>
+
+                        <td>
+                            @if (!string.IsNullOrWhiteSpace(doctor.ApplicationUserId))
+                            {
+                                <span class="badge text-bg-success">Enabled</span>
+                            }
+                            else
+                            {
+                                <span class="badge text-bg-secondary">Not configured</span>
+                            }
+                        </td>
+
+                        <td>
+
+                            <a asp-action="Update"
+                               asp-route-id="@doctor.Id"
+                               class="btn btn-outline-primary btn-sm">
+                                Edit
+                            </a>
+
+                            <a asp-action="Delete"
+                               asp-route-id="@doctor.Id"
+                               class="btn btn-outline-danger btn-sm">
+                                Delete
+                            </a>
+
+                        </td>
+
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+
+                    <td colspan="6"
+                        class="text-center text-muted py-4">
+
+                        No Doctors Found
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+        </table>
+    </div>
+
+</section>

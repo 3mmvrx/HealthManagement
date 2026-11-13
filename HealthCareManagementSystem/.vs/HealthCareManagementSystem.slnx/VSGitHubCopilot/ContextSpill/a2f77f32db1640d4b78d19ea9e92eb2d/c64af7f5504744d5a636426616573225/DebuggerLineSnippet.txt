@@ -1,0 +1,292 @@
+﻿FileId: 2
+```csharp HealthCareManagementSystem\Areas\Admin\Controllers\DoctorController.cs
+1: using HealthCareManagementSystem.Repositories;
+2: using HealthCareManagementSystem.Services;
+3: using HealthCareManagementSystem.ViewModels;
+4: using Microsoft.AspNetCore.Authorization;
+5: using Microsoft.AspNetCore.Mvc;
+6: using Microsoft.AspNetCore.Mvc.Rendering;
+7: using Microsoft.EntityFrameworkCore;
+8: 
+9: namespace HealthCareManagementSystem.Areas.Admin.Controllers
+10: {
+11:     [Area(CD.ADMIN_AREA)]
+12:     [Authorize(Roles = CD.STAFF_ROLES)]
+13:     public class DoctorController : Controller
+14:     {
+15:         private const string ImageFolder = "Doctors";
+16: 
+17:         private readonly IRepository<Clinic> _clinicRepository;
+18:         private readonly IRepository<Doctor> _doctorRepository;
+19:         private readonly IRepository<Appointment> _appointmentRepository;
+20:         private readonly IImageService _imageService;
+21: 
+22:         public DoctorController(
+23:             IRepository<Clinic> clinicRepository,
+24:             IRepository<Doctor> doctorRepository,
+25:             IRepository<Appointment> appointmentRepository,
+26:             IImageService imageService)
+27:         {
+28:             _clinicRepository = clinicRepository;
+29:             _doctorRepository = doctorRepository;
+30:             _appointmentRepository = appointmentRepository;
+31:             _imageService = imageService;
+32:         }
+33: 
+34:         #region Index
+35: 
+36:         [HttpGet]
+37:         public async Task<IActionResult> Index()
+38:         {
+39:             var doctors = await _doctorRepository.GetAsync(
+40:                 includes: [d => d.Clinic],
+41:                 tracked: false,
+42:                 orderBy: query => query.OrderBy(d => d.Name));
+43: 
+44:             return View(doctors);
+45:         }
+46: 
+47:         #endregion
+48: 
+49:         #region Create
+50: 
+51:         [HttpGet]
+52:         public async Task<IActionResult> Create()
+53:         {
+54:             await PopulateClinicsAsync();
+55: 
+56:             return View(new DoctorVM());
+57:         }
+58: 
+59:         [HttpPost]
+60:         public async Task<IActionResult> Create(DoctorVM doctorVM)
+61:         {
+62:             if (!ModelState.IsValid)
+63:             {
+64:                 await PopulateClinicsAsync(doctorVM.ClinicId);
+65:                 return View(doctorVM);
+66:             }
+67: 
+68:             var clinicId = doctorVM.ClinicId!.Value;
+69: 
+70:             if (!await _clinicRepository.AnyAsync(c => c.Id == clinicId))
+71:             {
+72:                 ModelState.AddModelError(nameof(DoctorVM.ClinicId), "The selected clinic does not exist.");
+73:                 await PopulateClinicsAsync();
+74:                 return View(doctorVM);
+75:             }
+76: 
+77:             string? imageName = null;
+78: 
+79:             if (doctorVM.Image is { Length: > 0 })
+80:             {
+81:                 var saved = await _imageService.SaveAsync(doctorVM.Image, ImageFolder);
+82: 
+83:                 if (!saved.Succeeded)
+84:                 {
+85:                     ModelState.AddModelError(nameof(DoctorVM.Image), saved.Error ?? "The image could not be saved.");
+86:                     await PopulateClinicsAsync(clinicId);
+87:                     return View(doctorVM);
+88:                 }
+89: 
+90:                 imageName = saved.FileName;
+91:             }
+92: 
+93:             var doctor = new Doctor
+94:             {
+95:                 Name = doctorVM.Name.Trim(),
+96:                 Specialization = doctorVM.Specialization.Trim(),
+97:                 ClinicId = clinicId,
+98:                 ImageName = imageName
+99:             };
+100: 
+101:             try
+102:             {
+103:                 await _doctorRepository.AddAsync(doctor);
+104:                 await _doctorRepository.CommitAsync();
+105:             }
+106:             catch (DbUpdateException)
+107:             {
+108:                 _imageService.Delete(imageName, ImageFolder);
+109:                 ModelState.AddModelError(string.Empty, "The doctor could not be saved. Please try again.");
+110:                 await PopulateClinicsAsync(clinicId);
+111:                 return View(doctorVM);
+112:             }
+113: 
+114:             TempData["Success-Notification"] = "Doctor added successfully.";
+115: 
+116:             return RedirectToAction(nameof(Index));
+117:         }
+118: 
+119:         #endregion
+120: 
+121:         #region Update
+122: 
+123:         [HttpGet]
+124:         public async Task<IActionResult> Update(int id)
+125:         {
+126:             var doctor = await _doctorRepository.GetOneAsync(d => d.Id == id, tracked: false);
+127: 
+128:             if (doctor == null)
+129:             {
+130:                 return RedirectToAction("NotFoundPage", "Home");
+131:             }
+132: 
+133:             await PopulateClinicsAsync(doctor.ClinicId);
+134: 
+135:             var doctorVM = new DoctorVM
+136:             {
+137:                 Name = doctor.Name,
+138:                 Specialization = doctor.Specialization,
+139:                 ClinicId = doctor.ClinicId,
+140:                 ImageName = doctor.ImageName
+141:             };
+142: 
+143:             return View(doctorVM);
+144:         }
+145: 
+146:         [HttpPost]
+147:         public async Task<IActionResult> Update(int id, DoctorVM doctorVM)
+148:         {
+149:             var doctor = await _doctorRepository.GetOneAsync(d => d.Id == id);
+150: 
+151:             if (doctor == null)
+152:             {
+153:                 return RedirectToAction("NotFoundPage", "Home");
+154:             }
+155: 
+156:             // Keeps the current picture visible if the form has to be shown again.
+157:             doctorVM.ImageName = doctor.ImageName;
+158: 
+159:             if (!ModelState.IsValid)
+160:             {
+161:                 await PopulateClinicsAsync(doctorVM.ClinicId);
+162:                 return View(doctorVM);
+163:             }
+164: 
+165:             var clinicId = doctorVM.ClinicId!.Value;
+166: 
+167:             if (!await _clinicRepository.AnyAsync(c => c.Id == clinicId))
+168:             {
+169:                 ModelState.AddModelError(nameof(DoctorVM.ClinicId), "The selected clinic does not exist.");
+170:                 await PopulateClinicsAsync();
+171:                 return View(doctorVM);
+172:             }
+173: 
+174:             string? newImageName = null;
+175: 
+176:             if (doctorVM.Image is { Length: > 0 })
+177:             {
+178:                 var saved = await _imageService.SaveAsync(doctorVM.Image, ImageFolder);
+179: 
+180:                 if (!saved.Succeeded)
+181:                 {
+182:                     ModelState.AddModelError(nameof(DoctorVM.Image), saved.Error ?? "The image could not be saved.");
+183:                     await PopulateClinicsAsync(clinicId);
+184:                     return View(doctorVM);
+185:                 }
+186: 
+187:                 newImageName = saved.FileName;
+188:             }
+189: 
+190:             var oldImageName = doctor.ImageName;
+191: 
+192:             doctor.Name = doctorVM.Name.Trim();
+193:             doctor.Specialization = doctorVM.Specialization.Trim();
+194:             doctor.ClinicId = clinicId;
+195: 
+196:             if (newImageName != null)
+197:             {
+198:                 doctor.ImageName = newImageName;
+199:             }
+200: 
+201:             try
+202:             {
+203:                 _doctorRepository.Update(doctor);
+204:                 await _doctorRepository.CommitAsync();
+205:             }
+206:             catch (DbUpdateException)
+207:             {
+208:                 _imageService.Delete(newImageName, ImageFolder);
+209:                 ModelState.AddModelError(string.Empty, "The doctor could not be updated. Please try again.");
+210:                 await PopulateClinicsAsync(clinicId);
+211:                 return View(doctorVM);
+212:             }
+213: 
+214:             if (newImageName != null)
+215:             {
+216:                 _imageService.Delete(oldImageName, ImageFolder);
+217:             }
+218: 
+219:             TempData["Success-Notification"] = "Doctor updated successfully.";
+220: 
+221:             return RedirectToAction(nameof(Index));
+222:         }
+223: 
+224:         #endregion
+225: 
+226:         #region Delete
+227: 
+228:         [HttpGet]
+229:         public async Task<IActionResult> Delete(int id)
+230:         {
+231:             var doctor = await _doctorRepository.GetOneAsync(
+232:                 d => d.Id == id,
+233:                 includes: [d => d.Clinic],
+234:                 tracked: false);
+235: 
+236:             if (doctor == null)
+237:             {
+238:                 return RedirectToAction("NotFoundPage", "Home");
+239:             }
+240: 
+241:             return View(doctor);
+242:         }
+243: 
+244:         [HttpPost, ActionName("Delete")]
+245:         public async Task<IActionResult> DeleteConfirmed(int id)
+246:         {
+247:             var doctor = await _doctorRepository.GetOneAsync(d => d.Id == id);
+248: 
+249:             if (doctor == null)
+250:             {
+251:                 return RedirectToAction("NotFoundPage", "Home");
+252:             }
+253: 
+254:             if (await _appointmentRepository.AnyAsync(a => a.DoctorId == id))
+255:             {
+256:                 TempData["Error-Notification"] = "This doctor has appointments on record, so they cannot be deleted.";
+257:                 return RedirectToAction(nameof(Index));
+258:             }
+259: 
+260:             try
+261:             {
+262:                 _doctorRepository.Delete(doctor);
+263:                 await _doctorRepository.CommitAsync();
+264:             }
+265:             catch (DbUpdateException)
+266:             {
+267:                 TempData["Error-Notification"] = "This doctor is still used by other records, so they cannot be deleted.";
+268:                 return RedirectToAction(nameof(Index));
+269:             }
+270: 
+271:             _imageService.Delete(doctor.ImageName, ImageFolder);
+272: 
+273:             TempData["Success-Notification"] = "Doctor deleted successfully.";
+274: 
+275:             return RedirectToAction(nameof(Index));
+276:         }
+277: 
+278:         #endregion
+279: 
+280:         private async Task PopulateClinicsAsync(int? selectedClinicId = null)
+281:         {
+282:             var clinics = await _clinicRepository.GetAsync(
+283:                 tracked: false,
+284:                 orderBy: query => query.OrderBy(c => c.Name));
+285: 
+286:             ViewBag.Clinics = new SelectList(clinics, nameof(Clinic.Id), nameof(Clinic.Name), selectedClinicId);
+287:         }
+288:     }
+289: }
+```
